@@ -8,6 +8,5 @@ app.use(expressFileUpload());
 app.use(express.json())
 app.use(cors());
 app.use(router)
-const PORT = 4300;
 
 app.listen(process.env.PORT,console.log('appp is run'));
