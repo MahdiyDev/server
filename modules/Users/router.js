@@ -4,7 +4,8 @@ const { validate } = require('../../middlewares/jwt')
 
 const userModule = require('./user')
 
-router.get('/users', validate, userModule.GET)
+router.get('/', (req, res) => res.send('ok'))
+      .get('/users', validate, userModule.GET)
       .get('/user/:email', validate, userModule.USER)
       .get('/auth', validate, userModule.AUTH)
       .get('/avatar/:img', userModule.AVATARGET)
