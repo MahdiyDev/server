@@ -10,4 +10,4 @@ app.use(cors());
 app.use(router)
 const PORT = 4300;
 
-app.listen(PORT,console.log('appp is run'));
+app.listen(process.env.PORT,console.log('appp is run'));
